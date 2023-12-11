@@ -1,0 +1,362 @@
+/* <---------------------------------------- General ----------------------------------------> */
+
+body {
+    background-image: url(../images/Software_Medicine_background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+* {
+    color: rgb(1, 35, 53);
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+.header-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    background-color: rgba(95, 93, 93, 0.846);
+    border: 1px solid #b3b2ae;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 960px;
+    box-shadow: 0px 0px 5px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+#main-topic {
+    line-height: 1.4rem;
+}
+
+/* Styling for the buttons */
+.buttons {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the warning when user doesn't have JavaScript enabled */
+.noscript-warning {
+    color: red;
+    /* Text color */
+    background-color: #f8d7da;
+    /* Background color */
+    border: 1px solid #f5c6cb;
+    /* Border color */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* <---------------------------------------- Photography Page ----------------------------------------> */
+
+.link-container a:visited {
+    color: #681788 !important;
+    font-weight: bolder !important;
+}
+
+/* <---------------------------------------- About Page ----------------------------------------> */
+
+#downloadResumeBtn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resume-button {
+    text-align: center;
+    /* Center the button */
+    margin-top: 20px;
+    /* Spacing from the top element */
+}
+
+/* Hover Effect */
+#downloadResumeBtn:hover {
+    background-color: #357ABD;
+    /* Slightly darker shade for hover */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    transform: scale(1.05);
+    /* Slightly increase size */
+}
+
+/* <---------------------------------------- Games Page ----------------------------------------> */
+
+#gamesTable {
+    display: none;
+    /* Initially hidden */
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    /* Center the table and add some space around it */
+    background-color: #ffffff;
+    /* White background for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+#gamesTable th,
+td {
+    border: 1px solid #ddd;
+    /* Lighter border for cells */
+    padding: 10px 15px;
+    /* Adjust padding for cell spacing */
+    text-align: left;
+}
+
+#gamesTable th {
+    background-color: #0479f6 !important;
+    /* A distinct color for headers */
+    color: #ffffff;
+    /* White text for contrast */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Slightly different background for alternate rows */
+}
+
+/* <---------------------------------------- Home Page ----------------------------------------> */
+
+#trivia {
+    background: none;
+    /* Clean and neutral background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    width: 50%;
+    margin: auto;
+}
+
+#question {
+    font-size: large;
+}
+
+#answers li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #415a86;
+    /* Lighter than the main background */
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    color: #ffffff;
+    /* Darker text for readability */
+}
+
+#answers li:hover {
+    background-color: #e0e0e0;
+    /* Slightly darker on hover */
+    color: white;
+}
+
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.correct::after {
+    content: ' ✔';
+    color: green;
+}
+
+.incorrect::after {
+    content: ' ✘';
+    color: red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+    color: #333;
+    float: right;
+    /* Positions the close button to the right */
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+    /* Adds some spacing from the right edge */
+    margin-top: 5px;
+    /* Adds some spacing from the top */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    /* Needed to properly position the close button */
+    background-color: #5b6162;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(2, 44, 67);
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* <---------------------------------------- Media Queries ----------------------------------------> */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .container,
+    #trivia {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .animated-image,
+    #about-image-aside {
+        width: 100%;
+    }
+
+    .header-text,
+    .main-content {
+        font-size: 14px;
+    }
+
+    #gamesTable,
+    .buttons {
+        width: 100%;
+    }
+}
+
+/* Between small and medium devices (between 600px and 768px) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+
+    .animated-image,
+    #about-image-aside {
+        width: 90%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .container,
+    #trivia {
+        width: 80%;
+    }
+
+    .animated-image,
+    #about-image-aside {
+        width: 75%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .container,
+    #trivia {
+        width: 70%;
+    }
+
+    .animated-image,
+    #about-image-aside {
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .container,
+    #trivia {
+        width: 60%;
+    }
+
+    .animated-image,
+    #about-image-aside {
+        width: 50%;
+    }
+}
+
+/* Print media query */
+@media print {
+    body {
+        background-image: none;
+        color: black;
+    }
+
+    .container,
+    .animated-image,
+    #about-image-aside,
+    #trivia {
+        width: 100%;
+        box-shadow: none;
+        background: white;
+    }
+
+    .modal,
+    .buttons,
+    #downloadResumeBtn,
+    #gamesTable {
+        display: none;
+    }
+
+    .header-text,
+    .main-content,
+    #gamesTable th,
+    td {
+        font-size: 12px;
+    }
+}

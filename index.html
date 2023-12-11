@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hamburgerNavigation.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <header class="header">
+            <nav class="nav-bar">
+                <nav-list></nav-list>
+            </nav>
+            <h1 class="header-text">Welcome To My First Website</h1>
+        </header>
+
+        <main class="main-content">
+            <section id="main-topic" class="intro-section">
+                <h2>What Is This Website About?</h2>
+                <article>
+                    <p>Hello all and welcome to my first website. I'm creating this website as a portfolio that
+                        showcases my experiences and passions in life. I hope to grow
+                        this website and build on it as my career progresses. This is my wonderful family when we were
+                        vacationing in Vancouver, Canada.</p>
+                    <div class="image-container">
+                        <img class="animated-image" src="./images/family.jpg"
+                            alt="The author's family in a garden in Vancouver, BC, Canada">
+                    </div>
+                </article>
+            </section>
+
+            <div id="trivia">
+                <h2>Trivia Game</h2>
+                <div id="question"></div>
+                <ul id="answers"></ul>
+                <button id="triviaButton" class="buttons" onclick="getTrivia()">Show Question</button>
+            </div>
+
+            <div id="customAlert" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="alertMessage"></p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">&copy; 2023. Benel Hirmez.</footer>
+    </div>
+    <script src="./JS/triviaGame.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./JS/navList.js"></script>
+    <noscript>
+        <div class="noscript-warning">
+            <p>JavaScript is not enabled in your browser. This page needs JavaScript to function properly.</p>
+        </div>
+    </noscript>
+</body>
+
+</html>

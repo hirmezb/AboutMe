@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Games</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/hamburgerNavigation.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+  <div id="app" class="container">
+    <header class="header">
+      <nav class="nav-bar">
+        <nav-list></nav-list>
+      </nav>
+      <h1 class="header-text">Video Games</h1>
+    </header>
+
+    <main class="main-content">
+      <section id="main-topic" class="intro-section">
+        <h2>What Games Do I Play?</h2>
+        <article>
+          <p>I've been gaming for as long as I can remember, since I got an Atari as a birthday present
+            (makes me feel old since a lot of people won't even recognize that name lol). Gaming helps me escape into a
+            different world. As someone who has moved around a lot, this is one of the best ways for me to keep in touch
+            with
+            old friends. I play all sorts of video games: First-person shooters, MMOs, survival, horror, etc,; some I've
+            discovered myself
+            while others were introduced to me by friends. Press the button below to view a table containing some of the
+            games I play.</p>
+        </article>
+      </section>
+
+      <div class="image-gallery">
+        <img class="animated-image" src="./images/acMirage.jpeg" alt="Assassin's Creed Mirage">
+        <img class="animated-image" src="./images/mw3.jpg" alt="Call of Duty: Modern Warfare 3">
+      </div>
+
+      <section>
+        <button id="loadButton" class="buttons">Show Games List</button>
+        <table id="gamesTable">
+          <!-- Table data will be inserted here -->
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer">&copy; 2023. Benel Hirmez.</footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="./JS/navList.js"></script>
+  <script src="./JS/createGamesTable.js"></script>
+  <noscript>
+    <div class="noscript-warning">
+      <p>JavaScript is not enabled in your browser. This page needs JavaScript to function properly.</p>
+    </div>
+  </noscript>
+</body>
+
+</html>

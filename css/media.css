@@ -1,0 +1,89 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    flex: 1;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+#cyclingImage,
+#photographyImage {
+    width: 100%;
+}
+
+.animated-image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.animated-image:hover {
+    transform: scale(1.03);
+    /* Slight scale on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}
+
+#aboutImageAside {
+    float: left;
+    max-width: 90%;
+    text-align: center;
+    font-style: italic;
+}
+
+#aboutImage {
+    border-radius: 50%;
+    max-width: 100%;
+    margin-right: auto;
+}
+
+.media-content {
+    max-width: 960px;
+    /* Set a max-width for larger screens */
+    margin: 30px auto;
+    /* Center it on the page */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border-radius: 15px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Ensures that the child elements adhere to the border radius */
+    background: #ffffff;
+    /* White background for contrast */
+    padding: 15px;
+    /* Padding around the video */
+    border: 1px solid #ddd;
+    /* Light border for a subtle definition */
+}
+
+.responsive-video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}

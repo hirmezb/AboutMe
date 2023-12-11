@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contactMe.css">
+    <link rel="stylesheet" href="./css/hamburgerNavigation.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <header class="header">
+            <nav class="nav-bar">
+                <nav-list></nav-list>
+            </nav>
+            <h1 class="header-text">Contact Me!</h1>
+        </header>
+
+        <main class="main-content">
+            <form id="form" class="contact-form" action="https://formspree.io/f/xzblneev" method="post">
+                <div id="firstNameInput" class="form-control">
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    <div class="error-message" id="firstNameError"></div>
+                </div>
+
+                <div id="lastNameInput" class="form-control">
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    <div class="error-message" id="lastNameError"></div>
+                </div>
+
+                <div id="cellInput" class="form-control">
+                    <label for="cell">Cell Phone Number</label><br>
+                    <input type="text" id="cell" name="cell" placeholder="Cell Phone Number">
+                    <div class="error-message" id="cellError"></div>
+                </div>
+
+                <div id="emailInput" class="form-control">
+                    <label for="email">Email Address</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email Address">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div id="preferredContactMethod" class="form-control">
+                    <p>What's your preferred method to be contacted?</p>
+                    <input type="checkbox" id="Cellphone" name="contactMethod" value="Cellphone">
+                    <label for="Cellphone">Cellphone</label><br>
+                    <input type="checkbox" id="Email" name="contactMethod" value="Email">
+                    <label for="Email">Email</label><br>
+                    <div class="error-message" id="contactMethodError"></div>
+                </div>
+
+                <div id="messageInput" class="form-control">
+                    <label for="message">What did you want to talk about?</label><br>
+                    <textarea id="message" name="message" placeholder="Your message here" rows="5" cols="50"></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="submit-button">Submit</button>
+                    <button type="reset" id="clearFormButton" class="reset-button">Clear Form</button>
+                </div>
+            </form>
+
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p>If you would like to contact me directly, please reach out to me at:</p>
+                <ul>
+                    <li>Cell: (209)676-7349</li>
+                    <li>Email: hirmezb@bu.edu</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">&copy; 2023. Benel Hirmez.</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./JS/navList.js"></script>
+    <script src="./JS/contactValidation.js"></script>
+    <noscript>
+        <div class="noscript-warning">
+            <p>JavaScript is not enabled in your browser. This page needs JavaScript to function properly.</p>
+        </div>
+    </noscript>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "genre": "MMO",
+        "games": [
+            "World of Warcraft",
+            "Final Fantasy XIV",
+            "The Elder Scrolls Online",
+            "Black Desert Online",
+            "Guild Wars 2"
+        ]
+    },
+    {
+        "genre": "Horror",
+        "games": [
+            "Resident Evil",
+            "Silent Hill 2",
+            "Outlast",
+            "Amnesia: The Dark Descent",
+            "Lethal Company"
+        ]
+    },
+    {
+        "genre": "Survival",
+        "games": [
+            "Ark: Survival Evolved",
+            "Rust",
+            "The Long Dark",
+            "Subnautica",
+            "Don't Starve"
+        ]
+    }
+]
